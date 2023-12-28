@@ -1,0 +1,12 @@
+| Feature                    | HTTP/1.1                             | HTTP/2                              |
+|-----------------------------|--------------------------------------|-------------------------------------|
+| **Multiplexing**           | No support                           | Yes, supports concurrent streams    |
+| **Header Compression**     | No compression                       | Uses HPACK for efficient compression|
+| **Protocol Type**          | Text-based                           | Binary-based                        |
+| **Resource Prioritization** | No explicit prioritization           | Supports stream prioritization     |
+| **Server Push**            | Not supported                        | Supports server push                |
+| **Connection Handling**    | Requires multiple connections        | Single connection is sufficient     |
+| **Flow Control**           | No native flow control               | Supports stream-level flow control |
+| **Error Handling**         | Errors can block entire page loading | Errors are isolated to individual streams|
+| **Backward Compatibility** | Compatible with HTTP/1.0            | Maintains backward compatibility with HTTP/1.1|
+| **Adoption and Support**   | Widely adopted                       | Growing adoption, increasing support|
